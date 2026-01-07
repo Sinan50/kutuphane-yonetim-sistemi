@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222222;
+    color: #EAE6DB;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    padding-bottom: 80px;
+}
+
+
+.sayfa-basligi {
+    text-align: center;
+    color: #EAE6DB;
+    margin-top: 30px;
+}
+
+.ayirac-cizgi {
+    width: 100px;
+    border-color: black;
+    border-top: 2px solid #EAE6DB;
+    margin-bottom: 30px;
+}
+
+
+form table {
+    width: 90%;
+    max-width: 450px;
+    margin: 20px auto;
+
+
+    background-color: #333;
+    border: 1px solid #EAE6DB;
+
+
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-collapse: collapse;
+}
+
+
+form tr,
+form td {
+    padding: 10px 0;
+    border: none;
+}
+
+form tr td:first-child {
+    text-align: right;
+    padding-right: 15px;
+    font-weight: bold;
+    width: 30%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    font-size: 15px;
+
+    background-color: #EAE6DB;
+    color: black;
+    border: 1px solid #EAE6DB;
+
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #EAE6DB;
+    box-shadow: 0 0 5px #EAE6DB;
+}
+
+form tr td[colspan="2"] {
+    text-align: center;
+    padding-top: 20px;
+}
+
+button[type="submit"] {
+    width: 70%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+
+    background-color: #2563EB;
+    color: #2B231A;
+
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #1D4ED8;
+}
+
+p.giris {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+p.giris a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p.giris a:hover {
+    text-decoration: underline;
+}
+
+.uyari-kutusu {
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 450px;
+    margin: 0 auto 20px auto;
+    font-weight: bold;
+}
+
+.uyari-kutusu.hata-durumu {
+    color: #e74c3c;
+    background-color: rgba(231, 76, 60, 0.1);
+    border: 1px solid #e74c3c;
+}
+
+.uyari-kutusu.basarili-durum {
+    color: #2ecc71;
+    background-color: rgba(46, 204, 113, 0.1);
+    border: 1px solid #2ecc71;
+}
+
+h2 {
+    text-align: center;
+    font-size: 300%;
+    margin-top: 5%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 0%;
+}
+
+hr {
+    width: 50%;
+}
+
+
+.alt-link {
+    text-align: center;
+    margin-top: 15px;
+}
