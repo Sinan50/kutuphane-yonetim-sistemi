@@ -1,5 +1,5 @@
 # Kütüphane Yönetim Sistemi
-PHP ve PDO ile geliştirilmiş Kütüphane Yönetim Sistemi (Okul Projesi)
+PHP ile geliştirilmiş Kütüphane Yönetim Sistemi (Okul Projesi)
 
 ## 🛠 Kurulum ve Giriş Bilgileri
 
@@ -27,9 +27,3 @@ Proje gereksinimi **"Tek Yöneticili (Admin) Panel"** olduğu için, karmaşık 
 Her sayfa için ayrı PHP dosyaları oluşturmak yerine, `index.php` üzerinde merkezi bir yönlendirme yapısı kurulmuştur.
 * **Yaklaşım:** `index.php?sayfa=kitaplar` gibi `GET` parametreleri ile içerik dinamik olarak `switch-case` yapısıyla yüklenmektedir.
 * **Neden:** Bu yapı, modern "Single Page Application" mantığının temeli olup, kod tekrarını (header/footer include işlemleri) minimuma indirmek ve bakımı kolaylaştırmak için seçilmiştir.
-
-### 3. Güvenlik Önlemleri
-Proje bir "Kavram Kanıtı (Proof of Concept)" niteliğinde olduğu için temel güvenlik önlemleri yeterli görülmüştür:
-* **SQL Injection:** Tüm veritabanı sorgularında `PDO Prepare/Execute` yapısı kullanılarak tam koruma sağlanmıştır.
-* **Parola Güvenliği:** MD5 gibi eski yöntemler yerine PHP standartlarına uygun `password_hash()` ve `password_verify()` fonksiyonları kullanılmıştır.
-* **Kapsam:** İleri düzey XSS ve CSRF korumaları, projenin temel CRUD işlemlerine odaklanması amacıyla bu sürümde kapsam dışı bırakılmıştır.
